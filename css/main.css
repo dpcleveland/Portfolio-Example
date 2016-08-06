@@ -1,0 +1,369 @@
+/* General Styles */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #566366;
+    background-color: #ffffff;
+}
+h2 {
+    color: #566366;
+    font-size: 28px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+h3 {
+    color: #566366;
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+p {
+    color: #919191;
+    font-size: 16px;
+    line-height: 28px;
+}
+a {
+    color: #3259c3;
+}
+a:hover {
+    color: #566366;
+    text-decoration: none;
+}
+
+/* Helper */
+
+.accent {
+    color: #3259c3;
+}
+.accent a {
+    color: #3259c3;
+}
+.accent a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+.accent-alt {
+    color: #ffffff;
+}
+.generic-button {
+    background-color: transparent;
+    color: #3259c3;
+    text-transform: uppercase;
+    font-size: 18px;
+    border: 2px solid #3259c3;
+    padding: 20px 38px;
+    text-decoration: none;
+    margin-top: 45px;
+    display: inline-block;
+}
+.generic-button:hover {
+    text-decoration: none;
+    color: #919191;
+    border-color: #919191;
+}
+
+/* Header */
+
+.header {
+    background-color: #252e30;
+    color: #ffffff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.logo {
+    background: transparent url(../img/logo.jpg) no-repeat;
+    display: block;
+    text-indent: -9999px;
+    width: 42px;
+    height: 42px;
+    float: left;
+    margin-top: 8px;
+}
+.name {
+    margin-left: 15px;
+    margin-top: 8px;
+    font-size: 30px;
+    display: block;
+    width: 280px;
+    height: 42px;
+    float: left;
+    text-transform: uppercase;
+}
+
+/* Banner */
+
+.banner .overlay-title {
+    color: #ffffff;
+    font-size: 36px;
+    font-size: 3.5vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: absolute;
+    text-align: center;
+    top: 20%;
+    left: 25%;
+    width: 50%;
+    border-top: #ffffff 1px solid;
+    border-bottom: #ffffff 1px solid;
+    padding-top: 20px;
+    padding-top: 2vw;
+    padding-bottom: 20px;
+    padding-bottom: 2vw;
+}
+.banner .banner-button {
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 16px;
+    font-size: 1.4vw;
+    text-transform: uppercase;
+    padding: 22px 36px;
+    padding: 2.4vw 1.6vw;
+    text-decoration: none;
+    border: #ffffff 2px solid;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 42%;
+    left: 40vw;
+    width: 16%;
+    width: 20vw;
+    display: inline-block;
+}
+.banner .banner-button:hover {
+    color: #3259c3;
+    border-color: #3259c3;
+}
+.banner {
+    padding-left: 0;
+    padding-right: 0;
+}
+.banner img {
+    width: 100%;
+}
+
+/* Navigation */
+
+.navigation {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.navigation ul {
+    list-style: none;
+    float: right;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.navigation ul li {
+    text-transform: uppercase;
+    float: left;
+    margin-right: 40px;
+}
+.navigation ul .last {
+    margin-right: 0;
+}
+.navigation ul li a {
+    color: #ffffff;
+    font-size: 18px;
+}
+.navigation ul li a:hover {
+    color: #3259c3;
+    text-decoration: none;
+}
+.navigation .active {
+    color: #3259c3;
+}
+
+/* Banded Content Sections */
+
+.main-content {
+    background-color: #ffffff;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.secondary-content {
+    background-color: #f2f2f1;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/* About Me */
+
+.services-icon {
+    font-size: 35px;
+    margin-top: 25px;
+    color: #3259c3;
+    float: left;
+    text-indent: -45px;
+}
+.services-marketing .services-icon {
+    text-indent: -50px;
+}
+
+/* Skills */
+
+.progress {
+    background-color: #f2f2f1;
+    margin-bottom: 30px;
+    border-radius: 0;
+    height: 30px;
+}
+.progress-bar {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: right;
+    padding-right: 10px;
+}
+.progress-bar-success {
+    background-color: #3259c3;
+}
+
+/* Resume */
+
+.resume-gallery {
+    margin-top: 80px;
+}
+
+/* Portfolio */
+
+.resume, .portfolio {
+    text-align: center;
+}
+.portfolio-gallery {
+    margin-top: 80px;
+}
+.gallery-image img {
+    margin-bottom: 30px;
+    width: 100%;
+}
+.shadow {
+    -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4);
+}
+
+/* Featherlight */
+
+.featherlight .featherlight-content {
+    max-width: 500px;
+    font-size: 18px;
+}
+.lightbox {
+    display: none;
+}
+
+/* Contact */
+
+.contact {
+    background-color: #252e30;
+    text-align: center;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #191f21;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+/* Social Icons */
+
+.social-icons {
+    height: 50px;
+    margin-bottom: 15px;
+}
+.social-icons ul {
+    list-style: none;
+    padding-left: 0;
+}
+.social-icons ul li {
+    margin-left: 7px;
+    float: left;
+    width: 40px;
+    height: 40px;
+    display: block;
+    padding: 8px 8px;
+    color: #ffffff;
+    border: 3px solid #ffffff;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.social-icons ul li i {
+    width: 15px;
+    height: 15px;
+}
+.social-icons .twitter {
+    margin-left: 0;
+}
+.social-icons .facebook {
+    padding: 8px 10px;
+}
+.social-icons .github {
+    padding: 8px 9px;
+}
+.social-icons .linkedin {
+    padding: 7px 9px;
+}
+.social-icons .email {
+    padding: 7px 2px;
+}
+.social-icons a:hover .twitter {
+    color: #00aced;
+    border-color: #00aced;
+}
+.social-icons a:hover .facebook {
+    color: #3b5998;
+    border-color: #3b5998;
+}
+.social-icons a:hover .github {
+    color: #000000;
+    border-color: #000000;
+}
+.social-icons a:hover .linkedin {
+    color: #007bb6;
+    border-color: #007bb6;
+}
+.social-icons a:hover .email {
+    color: #fb8f3d;
+    border-color: #fb8f3d;
+}
+
+/* Media Queries */
+
+@media (max-width: 1100px) {
+    .logo {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+    .name {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .navigation ul {
+        float: none;
+    }
+    .navigation ul li {
+        float: none;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .social-icons {
+        float: none;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .social-icons ul {
+        padding-left: 0;
+    }
+}
+@media (max-width: 992px) {
+    .skill-bars, .services {
+        margin-top: 80px;
+    }
+}
