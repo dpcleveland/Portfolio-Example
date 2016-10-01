@@ -5,46 +5,56 @@ body {
     color: #566366;
     background-color: #ffffff;
 }
+
 h2 {
     color: #566366;
     font-size: 28px;
     text-transform: uppercase;
     margin-bottom: 35px;
 }
+
 h3 {
     color: #566366;
     font-size: 22px;
     text-transform: uppercase;
     margin-bottom: 20px;
 }
+
 p {
     color: #919191;
     font-size: 16px;
     line-height: 28px;
 }
+
 a {
     color: #3259c3;
 }
+
 a:hover {
     color: #566366;
     text-decoration: none;
 }
+
 
 /* Helper */
 
 .accent {
     color: #3259c3;
 }
+
 .accent a {
     color: #3259c3;
 }
+
 .accent a:hover {
     color: #ffffff;
     text-decoration: none;
 }
+
 .accent-alt {
     color: #ffffff;
 }
+
 .generic-button {
     background-color: transparent;
     color: #3259c3;
@@ -56,11 +66,13 @@ a:hover {
     margin-top: 45px;
     display: inline-block;
 }
+
 .generic-button:hover {
     text-decoration: none;
     color: #919191;
     border-color: #919191;
 }
+
 
 /* Header */
 
@@ -70,6 +82,7 @@ a:hover {
     padding-top: 15px;
     padding-bottom: 15px;
 }
+
 .logo {
     background: transparent url(../img/logo.jpg) no-repeat;
     display: block;
@@ -79,6 +92,7 @@ a:hover {
     float: left;
     margin-top: 8px;
 }
+
 .name {
     margin-left: 15px;
     margin-top: 8px;
@@ -89,6 +103,7 @@ a:hover {
     float: left;
     text-transform: uppercase;
 }
+
 
 /* Banner */
 
@@ -101,8 +116,8 @@ a:hover {
     position: absolute;
     text-align: center;
     top: 20%;
-    left: 25%;
-    width: 50%;
+    left: 32.5%;
+    width: 35%;
     border-top: #ffffff 1px solid;
     border-bottom: #ffffff 1px solid;
     padding-top: 20px;
@@ -110,6 +125,7 @@ a:hover {
     padding-bottom: 20px;
     padding-bottom: 2vw;
 }
+
 .banner .banner-button {
     background-color: transparent;
     color: #ffffff;
@@ -122,24 +138,28 @@ a:hover {
     border: #ffffff 2px solid;
     position: absolute;
     text-align: center;
-    top: 50%;
+    top: 60%;
     left: 42%;
     left: 40vw;
     width: 16%;
     width: 20vw;
     display: inline-block;
 }
+
 .banner .banner-button:hover {
     color: #3259c3;
     border-color: #3259c3;
 }
+
 .banner {
     padding-left: 0;
     padding-right: 0;
 }
+
 .banner img {
     width: 100%;
 }
+
 
 /* Navigation */
 
@@ -147,31 +167,38 @@ a:hover {
     padding-top: 15px;
     padding-bottom: 15px;
 }
+
 .navigation ul {
     list-style: none;
     float: right;
     padding-left: 0;
     margin-bottom: 0;
 }
+
 .navigation ul li {
     text-transform: uppercase;
     float: left;
     margin-right: 40px;
 }
+
 .navigation ul .last {
     margin-right: 0;
 }
+
 .navigation ul li a {
     color: #ffffff;
     font-size: 18px;
 }
+
 .navigation ul li a:hover {
     color: #3259c3;
     text-decoration: none;
 }
+
 .navigation .active {
     color: #3259c3;
 }
+
 
 /* Banded Content Sections */
 
@@ -180,11 +207,13 @@ a:hover {
     padding-top: 80px;
     padding-bottom: 80px;
 }
+
 .secondary-content {
     background-color: #f2f2f1;
     padding-top: 80px;
     padding-bottom: 80px;
 }
+
 
 /* About Me */
 
@@ -195,9 +224,11 @@ a:hover {
     float: left;
     text-indent: -45px;
 }
+
 .services-marketing .services-icon {
     text-indent: -50px;
 }
+
 
 /* Skills */
 
@@ -207,15 +238,18 @@ a:hover {
     border-radius: 0;
     height: 30px;
 }
+
 .progress-bar {
     font-size: 18px;
     line-height: 30px;
     text-align: right;
     padding-right: 10px;
 }
+
 .progress-bar-success {
     background-color: #3259c3;
 }
+
 
 /* Resume */
 
@@ -223,23 +257,28 @@ a:hover {
     margin-top: 80px;
 }
 
+
 /* Portfolio */
 
 .resume, .portfolio {
     text-align: center;
 }
+
 .portfolio-gallery {
     margin-top: 80px;
 }
+
 .gallery-image img {
     margin-bottom: 30px;
     width: 100%;
 }
+
 .shadow {
     -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4);
     -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4);
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4);
 }
+
 
 /* Featherlight */
 
@@ -247,9 +286,11 @@ a:hover {
     max-width: 500px;
     font-size: 18px;
 }
+
 .lightbox {
     display: none;
 }
+
 
 /* Contact */
 
@@ -257,6 +298,7 @@ a:hover {
     background-color: #252e30;
     text-align: center;
 }
+
 
 /* Footer */
 
@@ -267,16 +309,19 @@ a:hover {
     text-align: center;
 }
 
+
 /* Social Icons */
 
 .social-icons {
     height: 50px;
     margin-bottom: 15px;
 }
+
 .social-icons ul {
     list-style: none;
     padding-left: 0;
 }
+
 .social-icons ul li {
     margin-left: 7px;
     float: left;
@@ -290,45 +335,57 @@ a:hover {
     -webkit-border-radius: 50%;
     border-radius: 50%;
 }
+
 .social-icons ul li i {
     width: 15px;
     height: 15px;
 }
+
 .social-icons .twitter {
     margin-left: 0;
 }
+
 .social-icons .facebook {
     padding: 8px 10px;
 }
+
 .social-icons .github {
     padding: 8px 9px;
 }
+
 .social-icons .linkedin {
     padding: 7px 9px;
 }
+
 .social-icons .email {
     padding: 7px 2px;
 }
+
 .social-icons a:hover .twitter {
     color: #00aced;
     border-color: #00aced;
 }
+
 .social-icons a:hover .facebook {
     color: #3b5998;
     border-color: #3b5998;
 }
+
 .social-icons a:hover .github {
     color: #000000;
     border-color: #000000;
 }
+
 .social-icons a:hover .linkedin {
     color: #007bb6;
     border-color: #007bb6;
 }
+
 .social-icons a:hover .email {
     color: #fb8f3d;
     border-color: #fb8f3d;
 }
+
 
 /* Media Queries */
 
@@ -362,6 +419,7 @@ a:hover {
         padding-left: 0;
     }
 }
+
 @media (max-width: 992px) {
     .skill-bars, .services {
         margin-top: 80px;
