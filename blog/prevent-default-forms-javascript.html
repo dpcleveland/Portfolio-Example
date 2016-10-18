@@ -11,15 +11,15 @@
     <!-- Meta Information -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Blog - Daniel Cleveland</title>
+    <title>Prevent Default Forms In JavaScript - Daniel Cleveland</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The blog of a Front End Developer and Marketer with a passion for building beautifully functional websites that provide positive ROI.">
+    <meta name="description" content="How and why you will need to prevent default form actions in JavaScript.">
     <meta name="author" content="Daniel Cleveland">
 
     <!-- OGP -->
     <meta property="og:site_name" content="Daniel Cleveland" />
-    <meta property="og:title" content="Blog - Daniel Cleveland" />
-    <meta property="og:description" content="The blog of a Front End Developer and Marketer with a passion for building beautifully functional websites that provide positive ROI." />
+    <meta property="og:title" content="Prevent Default Forms In JavaScript - Daniel Cleveland" />
+    <meta property="og:description" content="How and why you will need to prevent default form actions in JavaScript." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://danielcleveland.io/blog" />
     <meta property="og:image" content="http://danielcleveland.io/visual/img/ogp-image.png" />
@@ -90,33 +90,45 @@
             </nav>
         </header>
 
-        <section class="row masthead">
-            <section class="banner col-xs-12">
-                <img class="img-responsive center-block" src="../visual/img/header-background-md.jpg" alt="Daniel Cleveland - Developer & Marketer" />
-                <h1 class="overlay-title">
-                    Web Developer Blog
-                </h1>
-                <a href="#contact" class="banner-button" role="button">Work With Me</a>
-            </section>
-        </section>
-
         <section class="row main-content intro">
             <div class="col-xs-10 col-xs-offset-1">
-                <div class="col-xs-12 col-md-4">
-                    <h2>How To Setup Webpack</h2>
-                    <p>Step by step simple breakdown / reminder list for Webpack setup. <br>
-                    <a href="how-to-setup-webpack.html">Read More</a></p>
-                </div>
-                <div class="col-xs-12 col-md-4">
-                    <h2>Prevent Default Forms In JavaScript</h2>
-                    <p>This one tripped me up for awhile. Turns out you need to prevent the default form action. <br>
-                    <a href="prevent-default-forms-javascript.html">Read More</a></p>
-                </div>
-                <div class="col-xs-12 col-md-4">
-                    <h2>Install Node Modules To Current Working Directory On Mac</h2>
-                    <p>If you have already installed node modules to a global folder on your Mac, then by default that global folder is where new node modules will go instead of to your current working directory. <br>
-                    <a href="install-node-modules-working-directory.html">Read More</a></p>
-                </div>
+                <h1>Prevent Default Forms In JavaScript</h1>
+                <p>This one tripped me up for awhile. Turns out you need to prevent the default form action. This happens when you use <code>onsubmit</code>. I ran into this issue when working on the Wikipedia Viewer project - a Intermediate Front End Development project from <a href="https://www.freecodecamp.com/challenges/build-a-wikipedia-viewer" target="_blank">freeCodeCamp.</a> You can find my <a href="https://github.com/dpcleveland/wikipedia-viewer" target="_blank">Wikipedia Viewer code repository</a> on GitHub.</p>
+
+                <p>To let users search for a Wikipedia article, I used a simple form with a search field.</p>
+
+                <pre>
+                    &lt;form id="exp-search"&gt;
+                        &lt;input placeholder="Search..." type="search" value="" name="search" required&gt;
+                    &lt;/form&gt;
+                </pre>
+
+                <p>I then used JavaScript to get the search form element <code>var searchForm = document.getElementById('exp-search');</code> then an <code>onsubmit</code> function to execute my code:</p>
+
+                <pre>
+                    searchForm.onsubmit = function() {
+                        // code here
+                    };
+                </pre>
+
+                <p>But no matter what I tried, this wouldn't work. Whenever I submited a search, the screen would flash white then do nothing.</p>
+
+                <p>At first I thought it was CodePen itself, but after some research, I figured out I needed to prevent the default behavior of the form submit so I could overwrite it with my functionality.</p>
+
+                <p><code>e.preventDefault();</code></p>
+
+                <p>Mozilla has a great article on this behavior: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault" target="_blank">preventDefault</a>. Credit goes to "nameToReachPeople" on the freeCodeCamp forum for his/her <a href="http://forum.freecodecamp.com/t/issues-with-wikipedia-api-request-solved/40926/2" target="_blank">answer</a>.</p>
+
+                <p>To get it to work right, you have to pass a parameter to your onsubmit function:</p>
+
+                <pre>
+                    searchForm.onsubmit = function(e) {
+                        e.preventDefault();
+                        // code here
+                    };
+                </pre>
+
+
             </div>
         </section>
 

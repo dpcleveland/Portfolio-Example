@@ -11,15 +11,15 @@
     <!-- Meta Information -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Blog - Daniel Cleveland</title>
+    <title>Install Node Modules To Current Working Directory On Mac - Daniel Cleveland</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The blog of a Front End Developer and Marketer with a passion for building beautifully functional websites that provide positive ROI.">
+    <meta name="description" content="How to get node modules to install to your current working directory on a Mac computer with command line.">
     <meta name="author" content="Daniel Cleveland">
 
     <!-- OGP -->
     <meta property="og:site_name" content="Daniel Cleveland" />
-    <meta property="og:title" content="Blog - Daniel Cleveland" />
-    <meta property="og:description" content="The blog of a Front End Developer and Marketer with a passion for building beautifully functional websites that provide positive ROI." />
+    <meta property="og:title" content="Install Node Modules To Current Working Directory On Mac - Daniel Cleveland" />
+    <meta property="og:description" content="How to get node modules to install to your current working directory on a Mac computer with command line." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://danielcleveland.io/blog" />
     <meta property="og:image" content="http://danielcleveland.io/visual/img/ogp-image.png" />
@@ -90,33 +90,35 @@
             </nav>
         </header>
 
-        <section class="row masthead">
-            <section class="banner col-xs-12">
-                <img class="img-responsive center-block" src="../visual/img/header-background-md.jpg" alt="Daniel Cleveland - Developer & Marketer" />
-                <h1 class="overlay-title">
-                    Web Developer Blog
-                </h1>
-                <a href="#contact" class="banner-button" role="button">Work With Me</a>
-            </section>
-        </section>
-
         <section class="row main-content intro">
             <div class="col-xs-10 col-xs-offset-1">
-                <div class="col-xs-12 col-md-4">
-                    <h2>How To Setup Webpack</h2>
-                    <p>Step by step simple breakdown / reminder list for Webpack setup. <br>
-                    <a href="how-to-setup-webpack.html">Read More</a></p>
-                </div>
-                <div class="col-xs-12 col-md-4">
-                    <h2>Prevent Default Forms In JavaScript</h2>
-                    <p>This one tripped me up for awhile. Turns out you need to prevent the default form action. <br>
-                    <a href="prevent-default-forms-javascript.html">Read More</a></p>
-                </div>
-                <div class="col-xs-12 col-md-4">
-                    <h2>Install Node Modules To Current Working Directory On Mac</h2>
-                    <p>If you have already installed node modules to a global folder on your Mac, then by default that global folder is where new node modules will go instead of to your current working directory. <br>
-                    <a href="install-node-modules-working-directory.html">Read More</a></p>
-                </div>
+                <h1>Install Node Modules To Current Working Directory On Mac</h1>
+                <p>If you have already installed node modules to a global folder on your Mac, then by default that global folder is where new node modules will go instead of to your current working directory.</p>
+
+                <p>This is a problem if for example you're trying to install Webpack or other dependencies in a project within your Documents folder.</p>
+
+                <p>So it turns out the solution is pretty easy - simply delete any <kbd>node_modules</kbd> folder that you may have accidentally installed. Mine was in my home directory, where you'd find your Documents, Downloads, etc. by default.</p>
+
+                <p>However, you might also want to check where you installed node. By default on a Mac it should be <kbd>/usr/local/bin/</kbd>.</p>
+
+                <p>You can get there by using the following steps in the Terminal:</p>
+
+                <ol>
+                    <li><kbd>cd</kbd> (this gets you to home directory)</li>
+                    <li><kbd>cd ../../</kbd> (takes you up two directories)</li>
+                    <li><kbd>cd usr</kbd></li>
+                    <li><kbd>cd local</kbd></li>
+                    <li><kbd>cd bin</kbd></li>
+                    <li><kbd>ls</kbd> (lists the directory files/folders)</li>
+                    <li><kbd>open node_modules</kbd> (if you saw it there in last step)</li>
+                </ol>
+
+                <p>If there is a <kbd>node_modules</kbd> folder there, the last command listed above will open it up in Finder so you can see what's in it visually. Then you can decide if you need to delete the files there.</p>
+
+                <p>Check out <a href="http://stackoverflow.com/questions/14032160/npm-install-module-in-current-directory" target="_blank">this Stack Overflow question</a> for more info, particularly this comment:</p>
+
+                <quote>If there is no <kbd>./node_modules/</kbd> folder in the current directory, then npm will search the ancestor directories until it finds one with <kbd>node_modules/</kbd> in it. If it finds one, let's say in the grandparent directory, then <kbd>npm install packagename</kbd> will install <kbd>packagename</kbd> in <kbd>../../node_modules/</kbd>. However if it searches up the file tree until it reaches the root and still does not find any <kbd>node_modules/</kbd> folders, then you are correct, npm will automatically generate that folder in the current directory and install the package there.</quote>
+
             </div>
         </section>
 
